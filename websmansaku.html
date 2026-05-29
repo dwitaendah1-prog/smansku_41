@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi SMANSAKU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-blue-900 shadow-lg text-white transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#beranda" class="text-2xl font-bold tracking-wider">SMANSAKU<span class="text-yellow-400">.</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="hover:text-yellow-400 transition-colors px-3 py-2 text-sm font-medium">Beranda</a>
+                    <a href="#profil" class="hover:text-yellow-400 transition-colors px-3 py-2 text-sm font-medium">Profil</a>
+                    <a href="#prestasi" class="hover:text-yellow-400 transition-colors px-3 py-2 text-sm font-medium">Prestasi</a>
+                    <a href="#ekskul" class="hover:text-yellow-400 transition-colors px-3 py-2 text-sm font-medium">Ekskul</a>
+                    <a href="#kontak" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-4 py-2 rounded-md text-sm font-bold transition-colors">Hubungi Kami</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-yellow-400 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#beranda" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Beranda</a>
+                <a href="#profil" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Profil</a>
+                <a href="#prestasi" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Prestasi</a>
+                <a href="#ekskul" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Ekskul</a>
+                <a href="#kontak" class="block px-3 py-2 rounded-md text-base font-medium bg-yellow-500 text-blue-900 mt-2">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Gedung Sekolah" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Membangun Generasi Cerdas & Berkarakter</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">Selamat datang di website resmi SMA Negeri 1 KUTOWINANGUN. Kami berkomitmen untuk memberikan pendidikan terbaik bagi masa depan bangsa.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#profil" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1">Pelajari Lebih Lanjut</a>
+                <a href="#kontak" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:-translate-y-1">Pendaftaran</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Profil Sekolah</h2>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="SMANSAKU.jpeg" alt="Profil sekolah" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Sejarah & Visi Misi</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Didirikan pada tahun 1984, SMANSAKU telah menjadi institusi pendidikan terdepan di wilayah ini. Kami mengutamakan pendidikan karakter yang dipadukan dengan kemajuan teknologi.
+                    </p>
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Visi:</strong> TERWUJUDNYA INSAN UNGGUL BERKARAKTER,BERDAYA SAING GLOBAL DAN BERBUDAYA.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Misi 1:</strong> MEMBUDAYAKAN NILAI NILAI KEARIVAN LOKAL:RAMAH,SOPAN,SANTUN,DAN BERBUDI PEKERTI LUHUR.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span class="text-gray-700"><strong>Misi 2:</strong> MENYIAPKAN LULUSAN YANG SIAP UNTUK MEMASUKI PERGURUAN TINGGI FAVORIT.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prestasi" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Acara Kreatif dan Penuh Vibes Positif</h2>
+                <div class="w-16 h-1 bg-yellow-500 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-4">Beberapa Acara Kreatif dan Penuh Vibes Positif dari siswa-siswi kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="text-yellow-500 mb-4"><i class="fas fa-trophy text-4xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Indomie Goes To School</h3>
+                        <p class="text-gray-600 text-sm mb-4">2026</p>
+                        <img src="indomie.jpeg" alt="Indomie Goes To School" class="w-full h-40 object-cover rounded-md mb-4">
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="text-yellow-500 mb-4"><i class="fas fa-medal text-4xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Pemilihan Dimas Diajeng</h3>
+                        <p class="text-gray-600 text-sm mb-4">Kegiatan Tahunan (2026)</p>
+                        <img src="Dimas Diajeng.jpeg" alt="Pemilihan Dimas Diajeng" class="w-full h-40 object-cover rounded-md mb-4">
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-6">
+                        <div class="text-yellow-500 mb-4"><i class="fas fa-star text-4xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Grand opening BASWARA</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pagelaran seni (2026)</p>
+                        <img src="baswara.jpeg" alt="Grand opening BASWARA" class="w-full h-40 object-cover rounded-md mb-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ekskul" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-blue-900 mb-4">X.E8 MEMORIES</h2>
+            <div class="w-16 h-1 bg-yellow-500 mx-auto mb-12"></div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors border border-gray-100 cursor-pointer">
+                    <img src="batik bbs.jpeg" alt="X.E8" width="100%" height="100%" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="font-semibold text-gray-800">Before ASAT</h4>
+
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors border border-gray-100 cursor-pointer">
+                    <img src="batik gor.jpeg" alt="X.E8" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="font-semibold text-gray-800">Last Geography</h4>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors border border-gray-100 cursor-pointer">
+                    <img src="Pantai.jpeg" alt="X.E8"  class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="font-semibold text-gray-800">Pantai Mliwis</h4>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors border border-gray-100 cursor-pointer">
+                    <img src="pesantren kilat.jpeg" alt="X.E8" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="font-semibold text-gray-800">Pesantren Ramadhan</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-blue-950 pt-16 pb-8 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">SMANSAKU<span class="text-yellow-400">.</span></h3>
+                    <p class="mb-4 text-sm leading-relaxed">Mencetak generasi yang tidak hanya unggul dalam akademik, tetapi juga memiliki akhlak mulia dan kecakapan hidup.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-yellow-500 hover:text-blue-900 transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#beranda" class="hover:text-yellow-400 transition-colors">Beranda</a></li>
+                        <li><a href="#profil" class="hover:text-yellow-400 transition-colors">Profil Sekolah</a></li>
+                        <li><a href="#prestasi" class="hover:text-yellow-400 transition-colors">Prestasi</a></li>
+                        <li><a href="#ekskul" class="hover:text-yellow-400 transition-colors">Ekstrakurikuler</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition-colors">Portal Akademik (SIAKAD)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-yellow-400"></i>
+                            <span>Jl. Raya Barat No.185, Kec. Kutowinangun, Kebumen, Jawa Tengah</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-yellow-400"></i>
+                            <span>(0287) 123456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-yellow-400"></i>
+                            <span>info@smansaku.sch.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-900 pt-8 text-center text-sm">
+                <p>&copy; 2026 SMA Negeri 1 KUTOWINANGUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Tutup menu mobile saat link di klik
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
